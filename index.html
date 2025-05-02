@@ -10,42 +10,54 @@
 <body>
     <div id="contenedor">
         <header>
-            <div class="Titulo">
-                <img class="logo" src="img/Logo.png" alt="Logo de Lanemona">
-                <h1>Lanemona</h1>
+            <h1>Lanemona</h1>
+            <div class="fondoMenu">    
+                <div class="titulo">
+                    <a href="index.html"><img class="logo" src="img/Logo.png" alt="Logo de Lanemona"></a>
+                </div>
+                <nav class="menu1">
+                    <ul>
+                        <li><a href="index.html">Home</a>
+                            <ul>
+                                <li>
+                                    <a href="#Contactanos">Contactanos</a>
+                                    <a href="#Ubicanos">Ubicanos</a>
+                                    <a href="#Siguenos">Siguenos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="NuestroTrabajo.html" target="_blank">Nuestro Trabajo</a>
+                            <ul>
+                                <li>
+                                    <a href="NuestroTrabajo.html#ABRIL" target="_blank">ABRIL</a>
+                                    <a href="NuestroTrabajo.html#REINA" target="_blank">REINA</a>
+                                    <a href="NuestroTrabajo.html#PASTEL" target="_blank">PASTEL</a> 
+                                    <a href="NuestroTrabajo.html#HASHTAG" target="_blank">HASHTAG</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="SobreNosotros.html" target="_blank">Sobre Nosotros</a></li>
+                        <li id="Contacto"><a href="Contacto.html" target="_blank">Contacto</a>
+                            <ul>
+                                <li>
+                                    <a href="Contacto.html#RRSS" target="_blank">RRSS</a>
+                                    <a href="Contacto.html#WorkWus" target="_blank">Trabaja con nosotros</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>  
             </div>
-            <nav class="menu1">
-                <ul>
-                    <li>/ <a href="#">Home</a></li>
-                    <li>/ <a href="NuestroTrabajo.html" target="_blank">Nuestro Trabajo</a>
-                        <ul>
-                            <li><a href="NuestroTrabajo.html#ABRIL" target="_blank">ABRIL</a></li>
-                            <li><a href="NuestroTrabajo.html#REINA" target="_blank">REINA</a></li>
-                            <li><a href="NuestroTrabajo.html#PASTEL" target="_blank">PASTEL</a></li>
-                            <li><a href="NuestroTrabajo.html#HASHTAG" target="_blank">HASHTAG</a></li>
-                        </ul>
-                    </li>
-                    <li>/ <a href="SobreNosotros.html" target="_blank">Sobre Nosotros</a></li>
-                    <li>/ <a href="Contacto.html" target="_blank">Contacto</a></li>
-                </ul>
-            </nav>  
         </header>
         <section>
-            <div>
-                <h2 id="ABRIL">ABRIL</h2>
-            </div>
-            <div class="video">
-                <a href="https://www.youtube.com/watch?v=DDjE5aWbNEI" target="_blank">
+            <div class="videoABRIL">
                 <video autoplay loop muted>
                     <source src="assets/ABRIL _ Nel y Jof.mp4">
                     Tu navegador no admite el elemento
                 </video>
-            </a>
             </div>
             <div>
                 <h2 id="REINA">REINA</h2>
-            </div>
-            <div class="video">
                 <a href="https://www.youtube.com/watch?v=KO2sbMAsEHs" target="_blank">
                     <video autoplay loop muted>
                         <source src="assets/REINA _ Nel y Jof.mp4">
@@ -55,8 +67,6 @@
             </div>
             <div>
                 <h2 id="PASTEL">PASTEL</h2>
-            </div>
-            <div class="video">
                 <a href="https://www.youtube.com/watch?v=MOs9VVtXIAc" target="_blank">
                     <video autoplay loop muted>
                         <source src="assets/PASTEL _ Nel y Jof.mp4">
@@ -66,8 +76,6 @@
             </div>
             <div>
                 <h2 id="HASHTAG">HASHTAG</h2>
-            </div>
-            <div class="video">
                 <a href="https://www.youtube.com/watch?v=LKB_BF1hHkw" target="_blank">
                     <video autoplay loop muted>
                         <source src="assets/HASHTAG _ Nel y Jof & Puto Dyo.mp4">
@@ -89,22 +97,22 @@
         <footer>
             <ul>
                 <li>
-                    <h3>/ Contactanos</h3>
+                    <h3 id="Contactanos">/ Contactanos</h3>
                     <p>
                         <a href="mailto:vsabariegocossin@gmail.com">vsabariegocossin@gmail.com</a>
                         <a href="tel:622096703">+34 622096703</a>
                     </p>
                 </li>
                 <li>
-                    <h3>/ Ubicanos</h3>
+                    <h3 id="Ubicanos">/ Ubicanos</h3>
                     <p>
-                        <a href="https://www.google.es/maps/place/Carrer+de+Josep+Tarradellas,+13-1,+08760+Martorell,+Barcelona/@41.4788502,1.9130896,17z/data=!3m1!4b1!4m6!3m5!1s0x12a48ece9a2a9507:0x2068b229fafc7c57!8m2!3d41.4788468!4d1.9152548!16s%2Fg%2F11c65l7wgv?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D">Carrer de Josep Tarradellas, 13-1, 08760 Martorell, Barcelona</a>
+                        <a href="https://www.google.es/maps/place/Carrer+de+Josep+Tarradellas,+13-1,+08760+Martorell,+Barcelona/@41.4788502,1.9130896,17z/data=!3m1!4b1!4m6!3m5!1s0x12a48ece9a2a9507:0x2068b229fafc7c57!8m2!3d41.4788468!4d1.9152548!16s%2Fg%2F11c65l7wgv?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Carrer de Josep Tarradellas, 13-1, 08760 Martorell, Barcelona</a>
                     </p>
                 </li>
                 <li>
-                    <h3>/ Siguenos</h3>
-                    <a href=""><img src="img/SocialMediaIcons/twitter_logo.png" alt="twitter_logo"></a>
-                    <a href=""><img src="img/SocialMediaIcons/Facebook_logo.png" alt="Facebook_logo"></a>
+                    <h3 id="Siguenos">/ Siguenos</h3>
+                    <a href="#"><img src="img/SocialMediaIcons/twitter_logo.png" alt="twitter_logo"></a>
+                    <a href="#"><img src="img/SocialMediaIcons/Facebook_logo.png" alt="Facebook_logo"></a>
                     <a href="https://www.instagram.com/_lanemona_/" target="_blank"><img src="img/SocialMediaIcons/Instagram_logo.png" alt="Instagram_logo"></a>
                     <a href="https://www.youtube.com/@NELYJOF" target="_blank"><img src="img/SocialMediaIcons/Youtube_logo.png" alt="Youtube_logo"></a>
                 </li>
