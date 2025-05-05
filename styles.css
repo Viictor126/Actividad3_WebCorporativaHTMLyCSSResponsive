@@ -2,17 +2,20 @@
 	box-sizing: border-box;
    margin: 0;
    padding: 0;
+   transition: 200ms;
+}
+/* Desplazamiento suave */
+html {
+   scroll-behavior: smooth;
 }
 
 body{
    font-family: sans-serif;
-   z-index: 1;
 }
 /*efecto de overlay con video de fondo*/
 header{
    position: sticky;
    height: 100svh;
-   padding: 40px 20px;
    z-index: 3;
    background-color: rgb(205, 0, 0);
    mix-blend-mode: multiply; /* Solo el fondo se mezcla */
@@ -26,34 +29,40 @@ h1{
    position: absolute;
    color: whitesmoke;
    bottom: 0;
-   font-size: 10rem;
+   font-size: 8rem;
+   margin: .01em .1em;
 }
 
 .fondoMenu{
    background-color: white;
-   margin:-2.2vw -2vh;
-   padding: 1.5%;
 }
 
 /*posicion del menu*/
 .menu1{
-   position: relative;
-   transform: translate(-20%, -160%);
+   height: 100svh;
+   width: 30em;
+   position: absolute;
+   font-size: 1.5em;
    float: inline-end;
+   margin:0 1em;
 }
+
 /*menu desplegable*/
 ul{
    list-style: none;
 }
-nav li a{
+.menu1>ul>li>a{
+   color: whitesmoke;
+}
+.menu1 li a{
    text-decoration: none;
    display: block;
    padding: 10px 15px;
-   color: black;
 }
 nav li a:hover{
    background-color: rgb(220, 220, 220);
    border-radius: 5%;
+   color: black;
 }
 .menu1 li{
    display: inline-block;
@@ -64,10 +73,10 @@ nav li a:hover{
    position: absolute;
    background: white; /* Fondo para que el texto sea legible */
    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: sombra para destacar */
-
 }
 .menu1 li:hover > ul{
    display: block;
+   color: black;
 }
 .menu1 li ul li{
    position:relative;
@@ -96,7 +105,7 @@ section{
 section>div{
    position: relative;
    z-index: 2;
-   border: 1rem solid white;
+   border: 2rem solid white;
    background-color: white;
 }
 
@@ -117,5 +126,91 @@ video{
 footer, aside{
    z-index: 12;
    position: relative;
-   background-color: white;
+   background-color: rgb(183, 36, 36);
+}
+
+/*menu aside*/
+aside{
+   font-size: 200%;
+   position: fixed;
+   right: 0px;
+   top: 0%;
+   z-index: 10;
+   background: rgba(255, 255, 255, 0.9);
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgb(0, 0, 0);
+   height: 100svh;
+   transform: translateX(82%);
+   transition: 300ms;
+}
+.aside{
+   transform: translateY(40svh);
+}
+nav li a{
+   text-decoration: none;
+   display: block;
+   padding: 10px 15px;
+   color: black;
+}
+
+aside:hover{
+   transform: translateX(0%);
+   z-index: 10;
+   background: rgba(255, 255, 255, 0.9);
+   padding: 15px;
+   border-radius: 8px;
+   box-shadow: 0 4px 12px rgb(0, 0, 0);
+}
+
+footer{
+   position: relative;
+   bottom: 0%;
+   width: 100vw;
+   background-color: brown;
+   font-size: 1em;
+}
+
+h3{
+   font-size: 5em;
+}
+
+footer ul{
+   display: inline;
+}
+footer li{
+   text-align: center;
+   padding: 2em;
+}
+
+footer>ul li a{
+   text-decoration: none;
+   color: black;
+   padding: auto;
+}
+
+footer>ul li a:hover{
+   color: whitesmoke;
+   text-shadow: 0px 0px 5px rgb(107, 16, 16);
+}
+
+footer>ul li img:hover{
+   box-shadow: 0px 0px 20px rgb(205, 60, 60);
+}
+
+#Contactanos{
+}
+#Ubicanos{
+}
+#Siguenos>a{
+   padding-right: 2em;
+   display: inline;
+}
+#copy{
+   position: absolute;
+   padding: 1em;
+   bottom: 0;
+}
+
+@media (mix-width: 1300px) {
+
 }
