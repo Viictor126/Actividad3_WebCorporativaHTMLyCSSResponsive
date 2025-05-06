@@ -25,7 +25,7 @@ header{
    width: 50px;
 }
 
-h1{
+.lanemonaTitle{
    position: absolute;
    color: whitesmoke;
    bottom: 0;
@@ -164,9 +164,9 @@ aside:hover{
 }
 
 footer{
-   position: relative;
-   bottom: 0%;
+   bottom: 0;
    width: 100vw;
+   height: 100svh;
    background-color: brown;
    font-size: 1em;
 }
@@ -191,27 +191,38 @@ footer>ul li a{
 
 footer>ul li a:hover{
    color: whitesmoke;
-   text-shadow: 0px 0px 5px rgb(107, 16, 16);
+   text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
-footer>ul li img:hover{
-   box-shadow: 0px 0px 20px rgb(205, 60, 60);
+footer>ul li a ion-icon{
+   text-decoration: none;
+   color: black;
+   padding: 5vh;
+   font-size: 5em;
 }
 
-#Contactanos{
+footer>ul li a ion-icon:hover{
+   color: rgb(255, 255, 255);
 }
-#Ubicanos{
-}
-#Siguenos>a{
-   padding-right: 2em;
-   display: inline;
-}
+
 #copy{
    position: absolute;
    padding: 1em;
    bottom: 0;
 }
 
+.videoABRIL2{
+   position: fixed;
+   top: 0;
+   z-index: -1;
+   width: 100%;
+   height: 100vh; /* Altura completa de la ventana */
+   border: 0;
+}
+
+form{
+   
+}
 @media (mix-width: 1300px) {
 
 }
