@@ -71,8 +71,9 @@ nav li a:hover{
 .menu1 li ul{
    display: none;
    position: absolute;
-   background: white; /* Fondo para que el texto sea legible */
-   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: sombra para destacar */
+   background: white; 
+   box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+   border-radius: 3%;
 }
 .menu1 li:hover > ul{
    display: block;
