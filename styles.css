@@ -308,6 +308,22 @@ textarea{
    border-bottom: 2px solid white;
 }
 
+.jobsSection{
+   margin: 0;
+   display: grid;
+   grid-template: 1fr / 1fr 1fr;
+}
+.jobsSection h2{
+   border-radius: 10px;
+   margin-top: 1.4em;
+   padding: .5em;
+}
+
+.jobsSection>div, .jobsSection>video{
+   background-color: brown;
+   border: 2em solid brown;
+}
+
 @media (max-width: 1550px){
    .videoABRIL2{
       height: 100svh;
