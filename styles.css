@@ -1,524 +1,533 @@
-*{
-	box-sizing: border-box;
-   margin: 0;
-   padding: 0;
-   transition: 200ms;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: 200ms;
 }
 /* Desplazamiento suave */
 html {
-   scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-body{
-   font-family: "Recursive", sans-serif;
+body {
+  font-family: "Recursive", sans-serif;
 }
 /*efecto de overlay con video de fondo*/
-header{
-   position: sticky;
-   height: 100svh;
-   z-index: 3;
-   background-color: rgb(205, 0, 0);
-   mix-blend-mode: multiply; /* Solo el fondo se mezcla */
+header {
+  position: sticky;
+  height: 100svh;
+  z-index: 3;
+  background-color: rgb(205, 0, 0);
+  mix-blend-mode: multiply; /* Solo el fondo se mezcla */
 }
-.logo{
-   margin: .5% .5%;
-   width: 50px;
-}
-
-.lanemonaTitle{
-   position: absolute;
-   color: whitesmoke;
-   bottom: 0;
-   font-size: 13rem;
-   margin: .01em .1em;
+.logo {
+  margin: 0.5% 0.5%;
+  width: 50px;
 }
 
-.fondoMenu{
-   background-color: white;
+.lanemonaTitle {
+  position: absolute;
+  color: whitesmoke;
+  bottom: 0;
+  font-size: 13rem;
+  margin: 0.01em 0.1em;
+}
+
+.fondoMenu {
+  background-color: white;
 }
 
 /*posicion del menu*/
-.menu1{
-   height: 100svh;
-   width: 50svw;
-   position: absolute;
-   font-size: 1.5em;
-   float: inline-end;
-   margin:0 1em;
+.menu1 {
+  height: 100svh;
+  width: 50svw;
+  position: absolute;
+  font-size: 1.5em;
+  float: inline-end;
+  margin: 0 1em;
 }
 
 /*menu desplegable*/
-ul{
-   list-style: none;
+ul {
+  list-style: none;
 }
-.menu1>ul>li>a{
-   color: whitesmoke;
+.menu1 > ul > li > a {
+  color: whitesmoke;
 }
-.menu1 li a{
-   text-decoration: none;
-   display: block;
-   padding: 10px 15px;
+.menu1 li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
 }
-nav li a:hover{
-   background-color: rgb(220, 220, 220);
-   border-radius: 5%;
-   color: black;
+nav li a:hover {
+  background-color: rgb(220, 220, 220);
+  border-radius: 5%;
+  color: black;
 }
-.menu1 li{
-   display: inline-block;
-   position: relative; 
+.menu1 li {
+  display: inline-block;
+  position: relative;
 }
-.menu1 li ul{
-   display: none;
-   position: absolute;
-   background: white; 
-   box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-   border-radius: 3%;   
+.menu1 li ul {
+  display: none;
+  position: absolute;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 3%;
 }
-.menu1 li:hover > ul{
-   display: block;
-   color: black;
+.menu1 li:hover > ul {
+  display: block;
+  color: black;
 }
-.menu1 li ul li{
-   position:relative;
-}
-
-.drawer{
-   float: left;
-   cursor: pointer;
-   display: none;
-   padding: 1rem;
+.menu1 li ul li {
+  position: relative;
 }
 
-.drawer i{
-   scale: 150%;
+.drawer {
+  float: left;
+  cursor: pointer;
+  display: none;
+  padding: 1rem;
 }
 
-#ckbox{
-   display: none;
+.drawer i {
+  scale: 150%;
+}
+
+#ckbox {
+  display: none;
 }
 /* Asegura que el section tenga margen */
-section{
-   margin-top: 100vh; /* Espacio para el header */
-   background: white;
-   position: relative;
-   z-index: 1;
+section {
+  margin-top: 100vh; /* Espacio para el header */
+  background: white;
+  position: relative;
+  z-index: 1;
 }
 
 /*primer video de fondo para el efecto de la portada*/
-.videoABRIL{
-   opacity: 30%;
-   position: fixed;
-   top: 0;
-   z-index: 0;
-   width: 100%;
-   height: 100vh; /* Altura completa de la ventana */
-   border: 0;
+.videoABRIL {
+  opacity: 30%;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana */
+  border: 0;
 }
 
 /*separacion entre videos y borde*/
-section>div{
-   position: relative;
-   z-index: 2;
-   border: 2rem solid white;
-   background-color: white;
+section > div {
+  position: relative;
+  z-index: 2;
+  border: 2rem solid white;
+  background-color: white;
 }
 
-h2{
-   z-index: 2;
-   background-color: white;
-   mix-blend-mode:luminosity;
+h2 {
+  z-index: 2;
+  background-color: white;
+  mix-blend-mode: luminosity;
 }
 
-.video{
-   width: auto;
+.video {
+  width: auto;
 }
 
-video{
-   width: 100%;
+video {
+  width: 100%;
 }
 
-footer, aside{
-   z-index: 12;
-   position: relative;
-   background-color: rgb(183, 36, 36);
+footer,
+aside {
+  z-index: 12;
+  position: relative;
+  background-color: rgb(183, 36, 36);
 }
 
 /*menu aside*/
-aside{
-   font-size: 200%;
-   position: fixed;
-   right: 0px;
-   top: 0%;
-   z-index: 10;
-   background: rgba(255, 255, 255, 0.9);
-   border-radius: 8px;
-   box-shadow: 0 4px 12px rgb(0, 0, 0);
-   height: 100svh;
-   transform: translateX(82%);
-   transition: 300ms;
+aside {
+  font-size: 200%;
+  position: fixed;
+  right: 0px;
+  top: 0%;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+  height: 100svh;
+  transform: translateX(82%);
+  transition: 300ms;
 }
-.aside{
-   transform: translateY(40svh);
+.aside {
+  transform: translateY(40svh);
 }
-nav li a{
-   text-decoration: none;
-   display: block;
-   padding: 10px 15px;
-   color: black;
-}
-
-aside:hover{
-   transform: translateX(0%);
-   z-index: 10;
-   background: rgba(255, 255, 255, 0.9);
-   padding: 15px;
-   border-radius: 8px;
-   box-shadow: 0 4px 12px rgb(0, 0, 0);
+nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  color: black;
 }
 
-footer{
-   bottom: 0;
-   width: 100vw;
-   background-color: brown;
-   font-size: 1em;
+aside:hover {
+  transform: translateX(0%);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
 }
 
-h3{
-   font-size: 5em;
+footer {
+  bottom: 0;
+  width: 100vw;
+  background-color: brown;
+  font-size: 1em;
 }
 
-footer ul{
-   display: inline;
-}
-footer li{
-   text-align: center;
-   padding: 2em;
+h3 {
+  font-size: 5em;
 }
 
-footer>ul li a{
-   text-decoration: none;
-   color: black;
-   padding: auto;
+footer ul {
+  display: inline;
+}
+footer li {
+  text-align: center;
+  padding: 2em;
 }
 
-footer>ul li a:hover{
-   color: whitesmoke;
-   text-shadow: 0px 0px 5px rgb(0, 0, 0);
+footer > ul li a {
+  text-decoration: none;
+  color: black;
+  padding: auto;
 }
 
-footer>ul li a ion-icon{
-   text-decoration: none;
-   color: black;
-   padding: 5vh;
-   font-size: 5em;
+footer > ul li a:hover {
+  color: whitesmoke;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
 }
 
-footer>ul li a ion-icon:hover{
-   color: rgb(255, 255, 255);
+footer > ul li a ion-icon {
+  text-decoration: none;
+  color: black;
+  padding: 5vh;
+  font-size: 5em;
 }
 
-#copy{
-   position: absolute;
-   padding: 1em;
-   bottom: 0;
+footer > ul li a ion-icon:hover {
+  color: rgb(255, 255, 255);
 }
 
-.videoABRIL2{
-   position: fixed;
-   top: 0;
-   z-index: -1;
-   width: 100%;
-   height: 100vh; /* Altura completa de la ventana */
-   border: 0;
-   background-color: brown;
+#copy {
+  position: absolute;
+  padding: 1em;
+  bottom: 0;
 }
 
-.formTitle{
-   text-align: center;
-   padding: 4em;
-   transform:translateY(-1em) ;
-   color: white;
+.videoABRIL2 {
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh; /* Altura completa de la ventana */
+  border: 0;
+  background-color: brown;
 }
 
-.formBox{
-   margin: 0em 4em;
-   margin-bottom: 20em;
+.formTitle {
+  text-align: center;
+  padding: 4em;
+  transform: translateY(-1em);
+  color: white;
 }
 
-form, .abtus{
-   margin: auto;
-   padding: 2em;
-   width: 50svw;
-   color: white;
-   background-color: rgba(0, 0, 0, 0);
-   backdrop-filter: blur(100px);
-   border-radius: 10px;
-   box-shadow: 0 0 100px 5px rgb(4, 64, 85);
-   overflow: hidden;
+.formBox {
+  margin: 0em 4em;
+  margin-bottom: 20em;
 }
 
-.abtus{
-   margin: 30svh 25svw;
+form,
+.abtus {
+  margin: auto;
+  padding: 2em;
+  width: 50svw;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  box-shadow: 0 0 100px 5px rgb(4, 64, 85);
+  overflow: hidden;
 }
 
-fieldset, legend, label{
-   display: block;
-   padding: 1em;
-   border-radius: 10px;
+.abtus {
+  margin: 30svh 25svw;
 }
 
-input, select, textarea{
-   border-radius: 10px;
-   padding: .2em;
-   margin: 1em;
+fieldset,
+legend,
+label {
+  display: block;
+  padding: 1em;
+  border-radius: 10px;
 }
 
-textarea{
-   width: 100%;
-   height: 10em;
+input,
+select,
+textarea {
+  border-radius: 10px;
+  padding: 0.2em;
+  margin: 1em;
 }
 
-.botonera input{
-   display: inline;
-   margin: 0em 2em;
-   margin-top: 1em;
-   font-size: 2em;
-   background-color: brown;
-   color: white;
-   border: 0px solid;
+textarea {
+  width: 100%;
+  height: 10em;
 }
 
-.botonera input:hover{
-   background-color: white;
-   color: black;
-   box-shadow: 0 0 10px 1px rgb(0, 0, 0); ;
+.botonera input {
+  display: inline;
+  margin: 0em 2em;
+  margin-top: 1em;
+  font-size: 2em;
+  background-color: brown;
+  color: white;
+  border: 0px solid;
 }
 
-.abtus a{
-   text-decoration: none;
-   color: rgb(255, 108, 55);
-   padding: auto;
-   transition: .5s;
+.botonera input:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px 1px rgb(0, 0, 0);
 }
 
-.abtus a:hover{
-   color: rgb(249, 249, 249);
-   text-shadow: 0px 0px 5px rgb(0, 0, 0);
-   border-bottom: 2px solid white;
+.abtus a {
+  text-decoration: none;
+  color: rgb(255, 108, 55);
+  padding: auto;
+  transition: 0.5s;
 }
 
-.jobsSection{
-   margin: 0;
-   display: grid;
-   grid-template: 1fr / 1fr 1fr;
-}
-.jobsSection h2{
-   border-radius: 10px;
-   margin-top: 1.4em;
-   padding: .5em;
+.abtus a:hover {
+  color: rgb(249, 249, 249);
+  text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  border-bottom: 2px solid white;
 }
 
-.jobsSection>div, .jobsSection>video{
-   background-color: brown;
-   border: 2em solid brown;
+.jobsSection {
+  margin: 0;
+  display: grid;
+  grid-template: 1fr / 1fr 1fr;
+}
+.jobsSection h2 {
+  border-radius: 10px;
+  margin-top: 1.4em;
+  padding: 0.5em;
 }
 
-@media (max-width: 1550px){
+.jobsSection > div,
+.jobsSection > video {
+  background-color: brown;
+  border: 2em solid brown;
+}
 
-   .videoABRIL2{
-      height: 100svh;
-      width: 120em;
-      transform: translateX(-15%);
-      transition: 1s;
-   }
-   .lanemonaTitle{
-      font-size: 8em;
-   }
+@media (max-width: 1550px) {
+  .videoABRIL2 {
+    height: 100svh;
+    width: 120em;
+    transform: translateX(-15%);
+    transition: 1s;
+  }
+  .lanemonaTitle {
+    font-size: 8em;
+  }
 }
 
 @media (max-width: 1400px) {
-   .menu1{
-      font-size: .8rem;
-   }
-   
-   .videoABRIL2{
-      transform: translateX(-20%);
-   }
+  .menu1 {
+    font-size: 0.8rem;
+  }
+
+  .videoABRIL2 {
+    transform: translateX(-20%);
+  }
 }
 
 @media (max-width: 1300px) {
-   .videoABRIL2{
-      transform: translateX(-25%);
-   }
+  .videoABRIL2 {
+    transform: translateX(-25%);
+  }
 
-   form{
-      width: 90svw;
-   }
+  form {
+    width: 90svw;
+  }
 
-   .formBox{
-      margin: 0;
-      margin-bottom: 20em;
-   }
+  .formBox {
+    margin: 0;
+    margin-bottom: 20em;
+  }
 }
 
 @media (max-width: 1000px), (max-width: 1000px) and (orientation: portrait) {
-   .lanemonaTitle{
-      font-size: 6rem;
-   }
+  .lanemonaTitle {
+    font-size: 6rem;
+  }
 
-   .videoABRIL{
-      height: 100svh;
-      width: 140em;
-      transform: translateX(-30%);
-   }
+  .videoABRIL {
+    height: 100svh;
+    width: 140em;
+    transform: translateX(-30%);
+  }
 
-   .menu1{
-      justify-content: flex-start;
-   }
-   .drawer{
-      display: block;
-   }
+  .menu1 {
+    justify-content: flex-start;
+  }
+  .drawer {
+    display: block;
+  }
 
-   .menu1 ul{
-      position: absolute;
-      width: 10%;
-      height: 15vh;
-      left: -100;
-      top: 5vh;
-      text-align: left;
-      transition: all 0.5s;
-      flex-direction: column;
-      align-content: stretch;
-   }
+  .menu1 ul {
+    position: absolute;
+    width: 10%;
+    height: 15vh;
+    left: -100;
+    top: 5vh;
+    text-align: left;
+    transition: all 0.5s;
+    flex-direction: column;
+    align-content: stretch;
+  }
 
-   .menu1 >ul> li >a:hover{
-      color: rgb(0, 0, 0);
-   }
+  .menu1 > ul > li > a:hover {
+    color: rgb(0, 0, 0);
+  }
 
-   .menu1 ul li{
-      padding: .5rem 0px;
-      display: flex;
-      flex-direction: column;
-      padding-left: -10rem;
-      border-bottom: solid 0.1rem rgba(153, 153, 153, 0.359);
-   }
+  .menu1 > ul {
+    padding: 0.5rem 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: -10rem;
+    border-bottom: solid 0.1rem rgba(153, 153, 153, 0.359);
+    transform: translateX(-100px);
+  }
 
-   #ckbox:checked~ul{
-      left: -200px;
-   }
+  .drawer:hover {
+    color: white;
+    transition: 0.01s;
+  }
 
-   .menu1 li:hover > ul{
-      position:relative;
-      display: block;
-      color: rgb(255, 255, 255);
-      top: 0;
-      transform: translateY(-20px);
-      left: 110%;
-      background-color: transparent;
-      box-shadow: none;
-   }
+  #ckbox:checked ~ ul {
+    transform: translateX(10px);
+  }
 
-   .menu1 li a:hover{
-      background-color: rgba(220, 220, 220, 0);
-      border-radius: 5%;
-      color: rgb(255, 255, 255);
-   }
+  .menu1 li:hover > ul {
+    position: relative;
+    display: block;
+    color: rgb(255, 255, 255);
+    top: 0;
+    transform: translateY(-20px);
+    left: 110%;
+    background-color: transparent;
+    box-shadow: none;
+  }
 
-   .menu1 li:hover > ul,
-   .menu1 li:focus-within > ul { /* Mantener submenú visible al hacer clic */
-      display: block !important;
-      width: 7em;
-      height: 10em;
-      top: 1em;
-      left: 1em;
-      color: white;
-   }
+  .menu1 li a:hover {
+    background-color: rgba(220, 220, 220, 0);
+    border-radius: 5%;
+    color: rgb(255, 255, 255);
+  }
 
-   aside {
-      font-size: 150%;
-   }
-   section>div {
-      border: 1rem solid white; /* Borde más delgado */
-   }
-   footer>ul li a ion-icon{
-      padding: 5vh;
-      font-size: 4em;  
-   }
-   .formTitle{
-      font-size: 1em;
-   }
+  .menu1 li:hover > ul,
+  .menu1 li:focus-within > ul {
+    /* Mantener submenú visible al hacer clic */
+    display: block !important;
+    width: 7em;
+    height: 10em;
+    top: 1em;
+    left: 1em;
+    color: white;
+  }
+
+  aside {
+    font-size: 150%;
+  }
+  section > div {
+    border: 1rem solid white; /* Borde más delgado */
+  }
+  footer > ul li a ion-icon {
+    padding: 5vh;
+    font-size: 4em;
+  }
+  .formTitle {
+    font-size: 1em;
+  }
 }
 /*no es necesario tocar nada para la orientación horizontal de la tablet
 */
 @media (max-width: 1000px) and (orientation: landscape) {
-   .lanemonaTitle{
-      left: 100px;
-   }
-   .aside{
-      transform: translateY(20svh);
-   }
-
-
+  .lanemonaTitle {
+    left: 100px;
+  }
+  .aside {
+    transform: translateY(20svh);
+  }
 }
 
 @media (max-width: 800px) {
-   .lanemonaTitle{
-      font-size: 5rem;
-   }
-
+  .lanemonaTitle {
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 650px), (max-width: 650px) and (orientation: portrait) {
-
 }
-
 
 @media (max-width: 550px), (max-width: 550px) and (orientation: portrait) {
-   .lanemonaTitle{
-      font-size: 3rem; /* Texto mucho más pequeño */
-   }
-   .fondoMenu {
-      margin: 0; /* Elimina márgenes negativos */
-      padding: 2%;
-   } 
-   .menu1 li {
-      display: block; /* Menú en columna */
-   }
-   .menu1 ul li ul li a{
-      display: in;
-   }
+  .lanemonaTitle {
+    font-size: 3rem; /* Texto mucho más pequeño */
+  }
+  .fondoMenu {
+    margin: 0; /* Elimina márgenes negativos */
+    padding: 2%;
+  }
+  .menu1 li {
+    display: block; /* Menú en columna */
+  }
+  .menu1 ul li ul li a {
+    display: in;
+  }
 
-   aside {
-      display: none; /* Oculta el aside en móviles */
-   }
-   section{
-      margin-top: 1em; 
-   }
-   section>div {
-      border: 0.5rem solid white;
-   }
-   .videoABRIL{
-      display: none;
-   }
+  aside {
+    display: none; /* Oculta el aside en móviles */
+  }
+  section {
+    margin-top: 1em;
+  }
+  section > div {
+    border: 0.5rem solid white;
+  }
+  .videoABRIL {
+    display: none;
+  }
 
-   video {
-      height: 200px; /* Altura fija para videos */
-   }
+  video {
+    height: 200px; /* Altura fija para videos */
+  }
 
-   .videoABRIL2, .videoABRIL2 video{
-      height: 100svh;
-   }
+  .videoABRIL2,
+  .videoABRIL2 video {
+    height: 100svh;
+  }
 
-   h3{
-      font-size: 3em;
-   }
+  h3 {
+    font-size: 3em;
+  }
 }
 
-@media (max-width:350px), (max-width: 350px) and (orientation: portrait) {
-   h3{
-      font-size: 1em;
-   }
+@media (max-width: 350px), (max-width: 350px) and (orientation: portrait) {
+  h3 {
+    font-size: 1em;
+  }
 }
 
 /* styles.css */

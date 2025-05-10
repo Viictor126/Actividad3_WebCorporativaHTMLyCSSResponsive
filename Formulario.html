@@ -1,128 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Trabaja con nosotros</title>
-            <!--Libreria iconos web https://ionicons.io -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-            <!-- font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+    <!--Libreria iconos web https://ionicons.io -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon" />
+  </head>
+  <body>
     <div class="videoABRIL2">
-        <video autoplay loop muted>
-            <source src="assets/ABRIL _ Nel y Jof.mp4">
-        </video>
+      <video autoplay loop muted>
+        <source src="assets/ABRIL _ Nel y Jof.mp4" />
+      </video>
     </div>
     <div class="titulo">
-        <a href="index.html"><img class="logo" src="img/Logo.png" alt="Logo de Lanemona"></a>
+      <a href="index.html"
+        ><img class="logo" src="img/Logo.png" alt="Logo de Lanemona"
+      /></a>
     </div>
     <h1 class="formTitle">¿Quieres Crear algo único?</h1>
     <div class="formBox">
-        <form action="mailto:vsabariegocossin@gmail.com">
-            <fieldset>
-                <legend>Datos Persoanles</legend>
+      <form action="mailto:vsabariegocossin@gmail.com">
+        <fieldset>
+          <legend>Datos Persoanles</legend>
 
-                <label for="Nombre">Nombre:
-                    <input type="text" name="Nombre" id="Nombre" placeholder="Lanemona" required>
-                </label>
-                
-                <label for="apellidos">Apellidos:
-                    <input type="text" name="apellido" id="apellido" placeholder="Studio" required>
-                </label>
+          <label for="Nombre"
+            >Nombre:
+            <input
+              type="text"
+              name="Nombre"
+              id="Nombre"
+              placeholder="Lanemona"
+              required
+            />
+          </label>
 
-                <label for="calle" class="dir">Direccion Postal:</label>
-                    <input type="text" name="calle" id="calle" placeholder="Calle: Josep Tarradellas">
-                    <input type="number" name="numero" id="numero" placeholder="Numero: 10">
-                    <input type="text" name="codigopostal" id="codigopostal" placeholder="Codigo Postal: 08760">
-                    <input type="text" name="ciudad" id="ciudad" placeholder="Ciudad: Barcelona">
+          <label for="apellidos"
+            >Apellidos:
+            <input
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Studio"
+              required
+            />
+          </label>
 
-            </fieldset>
+          <label for="calle" class="dir">Direccion Postal:</label>
+          <input
+            type="text"
+            name="calle"
+            id="calle"
+            placeholder="Calle: Josep Tarradellas"
+          />
+          <input
+            type="number"
+            name="numero"
+            id="numero"
+            placeholder="Numero: 10"
+          />
+          <input
+            type="text"
+            name="codigopostal"
+            id="codigopostal"
+            placeholder="Codigo Postal: 08760"
+          />
+          <input
+            type="text"
+            name="ciudad"
+            id="ciudad"
+            placeholder="Ciudad: Barcelona"
+          />
+        </fieldset>
 
-            <fieldset>
-                <legend>RRSS</legend>
+        <fieldset>
+          <legend>RRSS</legend>
 
-                <label for="instagram">Instagram:
-                    <input type="url" name="Instagram" id="instagram" placeholder="https://www.instagram.com/_lanemona_/" required>
-                </label>
+          <label for="instagram"
+            >Instagram:
+            <input
+              type="url"
+              name="Instagram"
+              id="instagram"
+              placeholder="https://www.instagram.com/_lanemona_/"
+              required
+            />
+          </label>
 
-                <label for="youtube">Youtube:
-                    <input type="url" name="Youtube" id="youtube" placeholder="https://www.youtube.com/@NELYJOF" required>
-                </label>
+          <label for="youtube"
+            >Youtube:
+            <input
+              type="url"
+              name="Youtube"
+              id="youtube"
+              placeholder="https://www.youtube.com/@NELYJOF"
+              required
+            />
+          </label>
 
-                <label for="otraRedSocial">Otra red social:
-                    <input type="url" name="Youtube" id="youtube" placeholder="https://www.x.xom">
-                </label>
-            </fieldset>
+          <label for="otraRedSocial"
+            >Otra red social:
+            <input
+              type="url"
+              name="Youtube"
+              id="youtube"
+              placeholder="https://www.x.xom"
+            />
+          </label>
+        </fieldset>
 
-            <fieldset>
-                <legend>Sexo Usuario</legend>
-                <label><input type="radio" name="sexo" id="hombre"> Hombre</label>
-                <label><input type="radio" name="sexo" id="mujer"> Mujer</label>
-                <label><input type="radio" name="sexo" id="nsnc"> Prefiero No Decir</label>
-            </fieldset>
+        <fieldset>
+          <legend>Sexo Usuario</legend>
+          <label><input type="radio" name="sexo" id="hombre" /> Hombre</label>
+          <label><input type="radio" name="sexo" id="mujer" /> Mujer</label>
+          <label
+            ><input type="radio" name="sexo" id="nsnc" /> Prefiero No
+            Decir</label
+          >
+        </fieldset>
 
-            <fieldset>
-                <legend>Presupuesto</legend>
-                <select name="Presupuesto" id="presupuesto" required>
-                    <option value="0">Selecciona uno</option>
-                    <option value="100-500">100€-500€</option>
-                    <option value="500-1000">500€-1.000€</option>
-                    <option value="1000-1500">1.000€-1.500€</option>
-                    <option value="1500-2000">1.500€-2.000€</option>
-                    <option value="2000-mas">2.000€-Más</option>
-                </select>
-            </fieldset>
-            
-            <fieldset>
-                <legend>Datos de Contacto</legend>
-                <label for="Presupuesto">Telefono<input type="tel" placeholder="622096703"></label>
-                <label for="email">Email<input type="email" placeholder="vsabariegocossin@gmailcom"></label>
-            </fieldset>
+        <fieldset>
+          <legend>Presupuesto</legend>
+          <select name="Presupuesto" id="presupuesto" required>
+            <option value="0">Selecciona uno</option>
+            <option value="100-500">100€-500€</option>
+            <option value="500-1000">500€-1.000€</option>
+            <option value="1000-1500">1.000€-1.500€</option>
+            <option value="1500-2000">1.500€-2.000€</option>
+            <option value="2000-mas">2.000€-Más</option>
+          </select>
+        </fieldset>
 
-            <fieldset>
-                <legend>Descripcion del proyecto</legend>
-                <textarea name="Descripcion" id="descripcion" placeholder="escribe una descripción breve de tu idea aquí" required></textarea>
-            </fieldset>
+        <fieldset>
+          <legend>Datos de Contacto</legend>
+          <label for="Presupuesto"
+            >Telefono<input type="tel" placeholder="622096703"
+          /></label>
+          <label for="email"
+            >Email<input type="email" placeholder="vsabariegocossin@gmailcom"
+          /></label>
+        </fieldset>
 
+        <fieldset>
+          <legend>Descripcion del proyecto</legend>
+          <textarea
+            name="Descripcion"
+            id="descripcion"
+            placeholder="escribe una descripción breve de tu idea aquí"
+            required
+          ></textarea>
+        </fieldset>
 
-            <div class="botonera">
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Borrar">
-            </div>
-        </form>
+        <div class="botonera">
+          <input type="submit" value="Enviar" />
+          <input type="reset" value="Borrar" />
+        </div>
+      </form>
     </div>
     <footer>
-        <ul>
-            <li id="Contactanos">
-                <h3>/ Contactanos</h3>
-                <p>
-                    <a href="mailto:vsabariegocossin@gmail.com">vsabariegocossin@gmail.com</a>
-                    <a href="tel:622096703">+34 622096703</a>
-                </p>
-            </li>
-            <li id="Ubicanos">
-                <h3>/ Ubicanos</h3>
-                <p>
-                    <a href="https://www.google.es/maps/place/Carrer+de+Josep+Tarradellas,+13-1,+08760+Martorell,+Barcelona/@41.4788502,1.9130896,17z/data=!3m1!4b1!4m6!3m5!1s0x12a48ece9a2a9507:0x2068b229fafc7c57!8m2!3d41.4788468!4d1.9152548!16s%2Fg%2F11c65l7wgv?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Carrer de Josep Tarradellas, 13-1, 08760 Martorell, Barcelona</a>
-                </p>
-            </li>
-            <li id="Siguenos">
-                <h3>/ Siguenos</h3>
-                <a href="#"><ion-icon name="close-outline"></ion-icon></a>
-                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://www.instagram.com/_lanemona_/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href="https://www.youtube.com/@NELYJOF" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
-            </li>
-        </ul>
-        <p id="copy">© LanemonaStudio</p>
+      <ul>
+        <li id="Contactanos">
+          <h3>/ Contactanos</h3>
+          <p>
+            <a href="mailto:vsabariegocossin@gmail.com"
+              >vsabariegocossin@gmail.com</a
+            >
+            <a href="tel:622096703">+34 622096703</a>
+          </p>
+        </li>
+        <li id="Ubicanos">
+          <h3>/ Ubicanos</h3>
+          <p>
+            <a
+              href="https://www.google.es/maps/place/Carrer+de+Josep+Tarradellas,+13-1,+08760+Martorell,+Barcelona/@41.4788502,1.9130896,17z/data=!3m1!4b1!4m6!3m5!1s0x12a48ece9a2a9507:0x2068b229fafc7c57!8m2!3d41.4788468!4d1.9152548!16s%2Fg%2F11c65l7wgv?entry=ttu&g_ep=EgoyMDI1MDQyOS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              >Carrer de Josep Tarradellas, 13-1, 08760 Martorell, Barcelona</a
+            >
+          </p>
+        </li>
+        <li id="Siguenos">
+          <h3>/ Siguenos</h3>
+          <a href="#"><ion-icon name="close-outline"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="https://www.instagram.com/_lanemona_/" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a href="https://www.youtube.com/@NELYJOF" target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+        </li>
+      </ul>
+      <p id="copy">© LanemonaStudio</p>
     </footer>
-</body>
+  </body>
 </html>
